@@ -25,6 +25,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: yarn install 
+    - run: yarn add apollo-server
     - run: yarn add @apollo/gateway
     - run: yarn add graphql@15.5.0
     - run: yarn build
