@@ -24,6 +24,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: rm -r /dist
+    - run: rm -r /node_modules
     - run: yarn install 
     - run: yarn add apollo-server
     - run: yarn add @apollo/gateway
