@@ -26,4 +26,5 @@ jobs:
         cache: 'npm'
     - run: yarn install 
     - run: yarn add @apollo/gateway
+    - run: yarn add graphql
     - run: yarn build
