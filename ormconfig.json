@@ -1,0 +1,31 @@
+[
+  {
+    "name": "dev",
+    "type": "mysql",
+    "host": "localhost",
+    "username": "sqluser",
+    "password": "password",
+    "database": "yourcar",
+    "entities": ["dist/**/entities/*{.ts,.js}"],
+    "synchronize": true,
+    "migrations": ["dist/migrations/*{.ts,.js}"],
+    "cli": {
+      "migrationsDir": "src/migrations"
+    }
+  },
+  {
+    "name": "prod",
+    "type": "mysql",
+    "host": "mysql-one.cnkihdnqkaw6.us-east-2.rds.amazonaws.com",
+    "port": 3307,
+    "username": "admin",
+    "password": "VhypeInc3!",
+    "database": "yourcar",
+    "entities": ["dist/**/entities/*{.ts,.js}"],
+    "synchronize": true,
+    "migrations": ["dist/migrations/*{.ts,.js}"],
+    "cli": {
+      "migrationsDir": "src/migrations"
+    }
+  }
+]
