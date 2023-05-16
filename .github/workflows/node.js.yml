@@ -24,7 +24,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: yarn install 
-    - run: yarn add @apollo/gateway
+    - run: yarn install
     - run: yarn add typescript@4.4.4
+    - run: yarn add @types/graphql
+    - run: yarn add @apollo/gateway
+    - run: yarn add @apollo/client@3.4.17
     - run: yarn build
